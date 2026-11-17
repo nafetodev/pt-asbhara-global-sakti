@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // 1. Tahun Dinamis pada Footer
+ 
   const tahunSpan = document.getElementById("tahunSekarang");
   if (tahunSpan) {
     tahunSpan.textContent = new Date().getFullYear();
   }
 
-  // 2. Efek Bayangan Navbar saat Halaman Di-scroll
+
   const navbar = document.getElementById("navbar");
   window.addEventListener("scroll", function () {
     if (navbar) {
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // 3. Toggle Menu Navigasi Mobile (Hamburger)
+
   const menuToggle = document.getElementById("menuToggle");
   const navMenu = document.getElementById("navMenu");
 
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // 4. Animasi Muncul Bertahap (Scroll Reveal)
+
   const revealElements = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // 5. Tombol Layanan Otomatis Memilih Dropdown Form (Perumahan / Sekolah)
+
   const serviceButtons = document.querySelectorAll(".btn-service");
   const layananSelect = document.getElementById("layananSelect");
   const kontakSection = document.getElementById("kontak");
@@ -78,7 +78,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // 6. Kirim Formulir Penawaran ke WhatsApp Perusahaan (+62 882-7177-2818)
   const quoteForm = document.getElementById("quoteForm");
   const formMessage = document.getElementById("formMessage");
 
@@ -115,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // 7. Filter Kategori & Lightbox 10 Foto Kegiatan (Dukung Klik, Keyboard & Swipe HP)
+
   const filterButtons = document.querySelectorAll(".filter-btn");
   const galleryCards = Array.from(document.querySelectorAll(".gallery-card"));
   const photoModal = document.getElementById("photoModal");
@@ -220,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (e.key === "ArrowRight") tampilkanFotoModal(activeIndex + 1);
     });
 
-    // Dukungan geser jari (Swipe) di layar HP
+
     let touchStartX = 0;
     if (modalSwipeArea) {
       modalSwipeArea.addEventListener("touchstart", function (e) {
