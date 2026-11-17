@@ -2,8 +2,8 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="PT. Asbhara Global Sakti (Global Security) - Jasa Pengamanan Satpam Profesional untuk Perumahan dan Sekolah di Batam, Kepulauan Riau.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="description" content="PT. Asbhara Global Sakti (Global Security) - Jasa Satpam Profesional untuk Perumahan dan Sekolah di Sekupang, Batam, Kepulauan Riau.">
   <title>PT. ASBHARA GLOBAL SAKTI | Jasa Satpam Perumahan &amp; Sekolah Batam</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,16 +13,19 @@
   <div class="topbar">
     <div class="container topbar-inner">
       <div class="topbar-address">
-        <span>&#128205; Puri Pesona Batam Cluster I Blok E No. 9, Kel. Tg. Uncang, Kec. Batu Aji, Batam</span>
+        <span class="icon-pin">&#128205;</span>
+        <span>Kav Blok B no. 14, Patam Lestari, Sekupang, Batam City, Riau Islands</span>
       </div>
       <div class="topbar-contact">
-        <span>HP / WA: <a href="https://wa.me/6288271772818" target="_blank" rel="noopener">+62 882-7177-2818</a></span>
+        <a href="tel:07788011998" class="topbar-link">&#9742; (0778)-8011-998</a>
+        <span class="divider">|</span>
+        <a href="https://wa.me/6288271772818?text=Halo%20PT.%20Asbhara%20Global%20Sakti,%20saya%20ingin%20bertanya%20mengenai%20jasa%20Satpam%20Perumahan%20/%20Sekolah." target="_blank" rel="noopener" class="topbar-link highlight">&#128172; +62 882-7177-2818</a>
       </div>
     </div>
   </div>
 
   <!-- HEADER & NAVIGASI -->
-  <header class="navbar" id="top">
+  <header class="navbar" id="navbar">
     <div class="container navbar-inner">
       <a href="#beranda" class="brand">
         <svg class="brand-logo" viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg" aria-label="Logo Global Security">
@@ -45,13 +48,17 @@
         </div>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka Menu">&#9776; Menu</button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka Menu Navigasi" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
 
       <nav class="nav-menu" id="navMenu">
-        <a href="#beranda" class="nav-link">Beranda</a>
-        <a href="#profil" class="nav-link">Profil Perusahaan</a>
+        <a href="#beranda" class="nav-link active">Beranda</a>
+        <a href="#profil" class="nav-link">Profil</a>
         <a href="#layanan" class="nav-link">Layanan</a>
-        <a href="#dokumentasi" class="nav-link">Video &amp; Galeri</a>
+        <a href="#dokumentasi" class="nav-link">Dokumentasi</a>
         <a href="#kontak" class="nav-link nav-cta">Minta Penawaran</a>
       </nav>
     </div>
@@ -60,102 +67,145 @@
   <main>
     <!-- HERO SECTION -->
     <section id="beranda" class="hero">
+      <div class="hero-bg-pattern"></div>
       <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="badge-resmi">Jasa Satpam Perumahan &amp; Sekolah</div>
-          <h1>Jasa Pengamanan Profesional untuk Perumahan &amp; Sekolah</h1>
+        <div class="hero-content reveal">
+          <div class="badge-resmi">
+            <span class="pulse-dot"></span>
+            Badan Usaha Jasa Pengamanan (BUJP)
+          </div>
+          <h1>Jasa Satpam Profesional untuk <span class="text-accent">Perumahan &amp; Sekolah</span></h1>
           <p class="hero-desc">
-            <strong>PT. ASBHARA GLOBAL SAKTI (Global Security)</strong> menyediakan tenaga satuan pengamanan (Satpam) terlatih, ramah, dan berdisiplin tinggi untuk menjaga keamanan serta ketertiban lingkungan <strong>Perumahan</strong> dan <strong>Sekolah</strong> di Batam dan Kepulauan Riau.
+            <strong>PT. ASBHARA GLOBAL SAKTI (Global Security)</strong> menghadirkan satuan pengamanan terlatih, sigap, dan ramah untuk menjaga keamanan lingkungan hunian warga serta ketertiban kawasan pendidikan di Kota Batam dan Kepulauan Riau.
           </p>
 
           <div class="hero-actions">
-            <a href="#kontak" class="btn btn-primary">Ajukan Penawaran Jasa</a>
-            <a href="https://wa.me/6288271772818?text=Halo%20PT.%20Asbhara%20Global%20Sakti,%20saya%20ingin%20berkonsultasi%20mengenai%20jasa%20Satpam%20perumahan%20/%20sekolah." target="_blank" rel="noopener" class="btn btn-whatsapp">
-              WhatsApp: +62 882-7177-2818
+            <a href="#kontak" class="btn btn-primary">
+              <span>Ajukan Penawaran</span>
+              <span class="btn-arrow">&rarr;</span>
+            </a>
+            <a href="https://wa.me/6288271772818?text=Halo%20PT.%20Asbhara%20Global%20Sakti,%20saya%20ingin%20berkonsultasi%20mengenai%20jasa%20Satpam%20Perumahan%20/%20Sekolah." target="_blank" rel="noopener" class="btn btn-whatsapp">
+              <span>Chat WhatsApp</span>
             </a>
           </div>
 
           <div class="hero-stats">
-            <div class="stat-item">
+            <div class="stat-card">
               <strong>24 / 7</strong>
               <span>Penjagaan Pos &amp; Patroli</span>
             </div>
-            <div class="stat-item">
+            <div class="stat-card">
               <strong>100%</strong>
               <span>Personel Seleksi &amp; Terlatih</span>
             </div>
-            <div class="stat-item">
+            <div class="stat-card">
               <strong>Batam</strong>
-              <span>Layanan Seluruh Area Kepri</span>
+              <span>Layanan Area Kepri</span>
             </div>
           </div>
         </div>
 
         <!-- FOTO PROFIL UTAMA -->
-        <div class="hero-media">
+        <div class="hero-media reveal">
           <figure class="photo-frame">
             <div class="photo-badge">COMPANY PROFILE</div>
-            <img src="gambar/fotoprofil.jpeg" alt="Pimpinan, Staf, dan Pasukan Satpam PT. Asbhara Global Sakti">
+            <div class="photo-zoom-wrap">
+              <img src="gambar/fotoprofil.jpeg" alt="Pimpinan, Staf, dan Pasukan Satpam PT. Asbhara Global Sakti">
+            </div>
             <figcaption>
               <strong>Jajaran Pimpinan, Staf &amp; Pasukan Satpam PT. Asbhara Global Sakti</strong>
-              <span>Puri Pesona Batam Cluster I Blok E No. 9, Kel. Tg. Uncang, Kec. Batu Aji, Batam.</span>
+              <span>Kav Blok B no. 14, Patam Lestari, Sekupang, Batam City, Riau Islands.</span>
             </figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <!-- PROFIL & DATA LEGALITAS -->
+    <!-- KEUNGGULAN SINGKAT (TRUST BAR) -->
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div class="trust-item reveal">
+          <div class="trust-icon">&#128737;</div>
+          <div>
+            <h3>Disiplin &amp; Humanis</h3>
+            <p>Tegas menegakkan aturan gerbang namun tetap ramah melayani warga dan wali murid.</p>
+          </div>
+        </div>
+        <div class="trust-item reveal">
+          <div class="trust-icon">&#128226;</div>
+          <div>
+            <h3>Pembinaan Berkala</h3>
+            <p>Apel pengecekan shift rutin dan koordinasi pembinaan fungsi teknis bersama Kepolisian.</p>
+          </div>
+        </div>
+        <div class="trust-item reveal">
+          <div class="trust-icon">&#128203;</div>
+          <div>
+            <h3>Laporan Situasi Terukur</h3>
+            <p>Buku mutasi jaga harian, kontrol tamu, serta patroli lingkungan siang dan malam hari.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFIL & IDENTITAS PERUSAHAAN -->
     <section id="profil" class="section section-gray">
       <div class="container profil-grid">
-        <div class="profil-text">
+        <div class="profil-text reveal">
           <span class="section-label">Tentang Kami</span>
-          <h2 class="section-title">Komitmen Keamanan Lingkungan Perumahan &amp; Sekolah</h2>
+          <h2 class="section-title">Mitra Keamanan Terpercaya di Sekupang &amp; Seluruh Batam</h2>
           <p>
-            Berpusat di Tanjung Uncang, Kecamatan Batu Aji, Kota Batam, <strong>PT. Asbhara Global Sakti</strong> berfokus menyediakan tenaga pengamanan yang sigap menjaga ketertiban kawasan hunian warga serta keamanan lingkungan pendidikan.
+            Berlokasi di <strong>Kav Blok B no. 14, Patam Lestari, Sekupang, Batam City, Riau Islands</strong>, <strong>PT. Asbhara Global Sakti</strong> berfokus menyediakan jasa pengamanan khusus lingkungan <strong>Perumahan</strong> dan <strong>Sekolah</strong>.
           </p>
           <p>
-            Seluruh personel kami menjalani pembinaan dan penyuluhan fungsi teknis pengamanan secara berkala bersama jajaran Sat Binmas Polresta Barelang demi menjaga standar kesiapsiagaan tertinggi di lapangan.
+            Kami memahami bahwa keamanan perumahan dan sekolah membutuhkan pendekatan yang berbeda: ketelitian memeriksa akses keluar-masuk kendaraan sekaligus sikap komunikatif yang menciptakan rasa aman bagi keluarga, siswa, dan tenaga pendidik.
           </p>
 
           <div class="feature-list">
             <div class="feature-box">
-              <strong>Seleksi &amp; Verifikasi Ketat</strong>
-              <span>Kelengkapan SKCK, kesehatan jasmani, sikap ramah, dan kesiapan mental kerja.</span>
+              <strong>Seleksi Personel Ketat</strong>
+              <span>Verifikasi SKCK, tes fisik, kesehatan jasmani, dan kesiapan mental kerja.</span>
             </div>
             <div class="feature-box">
-              <strong>Pengawasan &amp; Apel Rutin</strong>
-              <span>Kontrol shift siang &amp; malam oleh komandan regu dan koordinator lapangan.</span>
+              <strong>Kontrol Lapangan Rutin</strong>
+              <span>Pengawasan aktif oleh komandan regu dan koordinator lapangan di setiap shift.</span>
             </div>
           </div>
         </div>
 
-        <div class="company-card">
+        <div class="company-card reveal">
           <div class="company-card-header">
+            <span class="card-header-dot"></span>
             <h3>Identitas Resmi Perusahaan</h3>
           </div>
-          <table class="company-table">
-            <tr>
-              <th>Nama Perusahaan</th>
-              <td>PT. ASBHARA GLOBAL SAKTI</td>
-            </tr>
-            <tr>
-              <th>Fokus Layanan</th>
-              <td>Jasa Satpam Perumahan &amp; Sekolah</td>
-            </tr>
-            <tr>
-              <th>Alamat Kantor</th>
-              <td>Puri Pesona Batam Cluster I Blok E No. 9, Kel. Tg. Uncang, Kec. Batu Aji, Batam, Kepulauan Riau, Indonesia</td>
-            </tr>
-            <tr>
-              <th>HP / WhatsApp</th>
-              <td>+62 882-7177-2818</td>
-            </tr>
-            <tr>
-              <th>Email Resmi</th>
-              <td>asbharaglobalpt@gmail.com</td>
-            </tr>
-          </table>
+          <div class="table-responsive">
+            <table class="company-table">
+              <tr>
+                <th>Nama Perusahaan</th>
+                <td>PT. ASBHARA GLOBAL SAKTI</td>
+              </tr>
+              <tr>
+                <th>Unit Operasional</th>
+                <td>Global Security</td>
+              </tr>
+              <tr>
+                <th>Jenis Layanan</th>
+                <td>Jasa Satpam Perumahan &amp; Sekolah</td>
+              </tr>
+              <tr>
+                <th>Alamat Kantor</th>
+                <td>Kav Blok B no. 14, Patam Lestari, Sekupang, Batam City, Riau Islands</td>
+              </tr>
+              <tr>
+                <th>Telepon Kantor</th>
+                <td><a href="tel:07788011998">(0778)-8011-998</a></td>
+              </tr>
+              <tr>
+                <th>HP / WhatsApp</th>
+                <td><a href="https://wa.me/6288271772818" target="_blank" rel="noopener">+62 882-7177-2818</a></td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
     </section>
@@ -163,29 +213,59 @@
     <!-- LAYANAN PENGAMANAN (PERUMAHAN & SEKOLAH) -->
     <section id="layanan" class="section">
       <div class="container">
-        <div class="section-header">
-          <span class="section-label">Jenis Layanan Utama</span>
+        <div class="section-header reveal">
+          <span class="section-label">Bidang Layanan Utama</span>
           <h2 class="section-title">Jasa Satpam Perumahan &amp; Sekolah</h2>
-          <p class="section-subtitle">Penempatan personel pengamanan terlatih yang disesuaikan dengan kebutuhan lingkungan tempat tinggal maupun area pendidikan.</p>
+          <p class="section-subtitle">Pilih paket layanan pengamanan di bawah ini untuk otomatis mengisi formulir permintaan penawaran Anda.</p>
         </div>
 
-        <div class="services-grid services-two-cols">
-          <article class="service-card">
-            <div class="service-top">
-              <span class="service-num">01</span>
-              <h3>Jasa Satpam Perumahan &amp; Cluster</h3>
-              <p>Pengamanan terpadu lingkungan pemukiman warga meliputi penjagaan pos gerbang utama (One Gate System), pendataan tamu keluar-masuk, pengelolaan stiker akses warga, pengaturan lalu lintas gerbang, serta patroli lingkungan siang dan malam hari.</p>
+        <div class="services-two-cols">
+          <!-- KARTU 1: PERUMAHAN -->
+          <article class="service-card reveal">
+            <div>
+              <div class="service-card-top">
+                <span class="service-num">01</span>
+                <span class="service-tag">Hunian &amp; Cluster</span>
+              </div>
+              <h3>Jasa Satpam Perumahan</h3>
+              <p class="service-desc">
+                Sistem pengamanan lingkungan pemukiman warga secara terpadu untuk menjaga ketenangan dan mencegah gangguan kamtibmas selama 24 jam.
+              </p>
+              <ul class="service-checklist">
+                <li>Penjagaan pos gerbang utama (<em>One Gate System</em>).</li>
+                <li>Pendataan identitas tamu &amp; pemeriksaan kendaraan keluar-masuk.</li>
+                <li>Pengelolaan stiker akses warga &amp; pengaturan lalu lintas gerbang.</li>
+                <li>Patroli keliling blok perumahan pada siang dan jam rawan malam hari.</li>
+              </ul>
             </div>
-            <button type="button" class="btn-service" data-service="Perumahan">Ajukan Layanan Perumahan &rarr;</button>
+            <button type="button" class="btn-service" data-service="Perumahan">
+              <span>Ajukan Layanan Perumahan</span>
+              <span>&rarr;</span>
+            </button>
           </article>
 
-          <article class="service-card">
-            <div class="service-top">
-              <span class="service-num">02</span>
-              <h3>Jasa Satpam Sekolah &amp; Lingkungan Pendidikan</h3>
-              <p>Penjagaan gerbang sekolah, pengaturan arus lalu lintas antar-jemput siswa, pemeriksaan identitas tamu sekolah, pengawasan area parkir dan fasilitas gedung belajar, serta memastikan keamanan seluruh warga sekolah selama jam kegiatan berlangsung.</p>
+          <!-- KARTU 2: SEKOLAH -->
+          <article class="service-card reveal">
+            <div>
+              <div class="service-card-top">
+                <span class="service-num">02</span>
+                <span class="service-tag">Pendidikan</span>
+              </div>
+              <h3>Jasa Satpam Sekolah</h3>
+              <p class="service-desc">
+                Pengamanan kawasan sekolah yang ramah anak dan sigap mengatur ketertiban lalu lintas saat jam kedatangan maupun kepulangan siswa.
+              </p>
+              <ul class="service-checklist">
+                <li>Penjagaan gerbang sekolah &amp; verifikasi tamu yang berkunjung.</li>
+                <li>Pengaturan arus lalu lintas dan penyeberangan antar-jemput siswa.</li>
+                <li>Pengawasan area parkir kendaraan guru, staf, dan wali murid.</li>
+                <li>Patroli keamanan gedung kelas, laboratorium, dan fasilitas sekolah.</li>
+              </ul>
             </div>
-            <button type="button" class="btn-service" data-service="Sekolah">Ajukan Layanan Sekolah &rarr;</button>
+            <button type="button" class="btn-service" data-service="Sekolah">
+              <span>Ajukan Layanan Sekolah</span>
+              <span>&rarr;</span>
+            </button>
           </article>
         </div>
       </div>
@@ -194,14 +274,14 @@
     <!-- DOKUMENTASI VIDEO & 10 FOTO KEGIATAN -->
     <section id="dokumentasi" class="section section-gray">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header reveal">
           <span class="section-label">Dokumentasi Operasional</span>
           <h2 class="section-title">Video Profil &amp; Kegiatan Lapangan</h2>
-          <p class="section-subtitle">Dokumentasi video profil, apel kesiapsiagaan regu, penjagaan pos gerbang perumahan, serta patroli siang dan malam PT. Asbhara Global Sakti.</p>
+          <p class="section-subtitle">Dokumentasi video profil, apel kesiapsiagaan regu, penjagaan pos gerbang, serta patroli siang dan malam PT. Asbhara Global Sakti.</p>
         </div>
 
         <!-- 1. VIDEO PROFIL -->
-        <div class="video-block">
+        <div class="video-block reveal">
           <div class="video-container">
             <video controls preload="metadata" poster="gambar/fotoprofil.jpeg">
               <source src="video/vidio1.mp4" type="video/mp4">
@@ -211,90 +291,122 @@
           <p class="video-caption">Video Profil &amp; Dokumentasi Kesiapsiagaan Personel PT. Asbhara Global Sakti (Global Security)</p>
         </div>
 
-        <!-- TOMBOL FILTER KATEGORI FOTO -->
-        <div class="gallery-filters" role="group" aria-label="Filter Dokumentasi">
-          <button type="button" class="filter-btn active" data-filter="all">Semua Dokumentasi (10)</button>
-          <button type="button" class="filter-btn" data-filter="pos">Penjagaan Pos &amp; Gerbang</button>
-          <button type="button" class="filter-btn" data-filter="patroli">Patroli Siang &amp; Malam</button>
-          <button type="button" class="filter-btn" data-filter="apel">Apel &amp; Kesiapsiagaan Regu</button>
+        <!-- TOMBOL FILTER KATEGORI FOTO (SCROLLABLE DI HP) -->
+        <div class="gallery-filters-wrap reveal">
+          <div class="gallery-filters" role="group" aria-label="Filter Dokumentasi">
+            <button type="button" class="filter-btn active" data-filter="all">Semua Foto (10)</button>
+            <button type="button" class="filter-btn" data-filter="pos">Penjagaan Pos &amp; Gerbang</button>
+            <button type="button" class="filter-btn" data-filter="patroli">Patroli Siang &amp; Malam</button>
+            <button type="button" class="filter-btn" data-filter="apel">Apel &amp; Kesiapsiagaan Regu</button>
+          </div>
         </div>
 
         <!-- 2. GALERI 10 FOTO KEGIATAN -->
         <div class="gallery-grid" id="galleryGrid">
-          <figure class="gallery-card" data-category="patroli" data-caption="1. Patroli Lingkungan & Pengawasan Akses Jalan Utama Kawasan Perumahan oleh Regu Jaga Siang">
-            <img src="gambar/kegiatan1.jpeg" alt="Patroli Lingkungan Kawasan Perumahan" loading="lazy">
+          <figure class="gallery-card reveal" data-category="patroli" data-caption="1. Patroli Lingkungan & Pengawasan Akses Jalan Utama Kawasan Perumahan oleh Regu Jaga Siang">
+            <div class="gallery-img-box">
+              <img src="gambar/kegiatan1.jpeg" alt="Patroli Lingkungan Kawasan Perumahan" loading="lazy">
+              <span class="zoom-hint">&#128269; Perbesar</span>
+            </div>
             <figcaption>
               <strong>Patroli Kawasan Perumahan</strong>
               <span>Pengawasan rutin jalur utama perumahan oleh regu jaga siang dengan rompi keselamatan.</span>
             </figcaption>
           </figure>
 
-          <figure class="gallery-card" data-category="pos" data-caption="2. Penjagaan Pos Gerbang Utama (One Gate System) Kawasan Residence oleh Personel PT. Asbhara Global Sakti">
-            <img src="gambar/kegiatan2.jpeg" alt="Penjagaan Pos Gerbang Utama Residence" loading="lazy">
+          <figure class="gallery-card reveal" data-category="pos" data-caption="2. Penjagaan Pos Gerbang Utama (One Gate System) Kawasan Residence oleh Personel PT. Asbhara Global Sakti">
+            <div class="gallery-img-box">
+              <img src="gambar/kegiatan2.jpeg" alt="Penjagaan Pos Gerbang Utama Residence" loading="lazy">
+              <span class="zoom-hint">&#128269; Perbesar</span>
+            </div>
             <figcaption>
               <strong>Penjagaan Gerbang Residence</strong>
               <span>Kontrol keluar-masuk kendaraan dan pendataan tamu di pos utama kawasan perumahan.</span>
             </figcaption>
           </figure>
 
-          <figure class="gallery-card" data-category="pos" data-caption="3. Kesiapsiagaan Personel Jaga Pos dalam Pelayanan & Pengamanan Lingkungan Kerja">
-            <img src="gambar/kegiatan3.jpeg" alt="Kesiapsiagaan Personel Jaga Pos" loading="lazy">
+          <figure class="gallery-card reveal" data-category="pos" data-caption="3. Kesiapsiagaan Personel Jaga Pos dalam Pelayanan & Pengamanan Lingkungan Kerja">
+            <div class="gallery-img-box">
+              <img src="gambar/kegiatan3.jpeg" alt="Kesiapsiagaan Personel Jaga Pos" loading="lazy">
+              <span class="zoom-hint">&#128269; Perbesar</span>
+            </div>
             <figcaption>
               <strong>Kesiapsiagaan Personel Pos</strong>
               <span>Anggota Satpam berseragam lengkap siap memberikan pelayanan pengamanan yang sigap.</span>
             </figcaption>
           </figure>
 
-          <figure class="gallery-card" data-category="patroli" data-caption="4. Pengamanan Area Gerbang & Pengaturan Arus Lalu Lintas Kendaraan">
-            <img src="gambar/kegiatan4.jpeg" alt="Pengamanan Area Gerbang dan Lalu Lintas" loading="lazy">
+          <figure class="gallery-card reveal" data-category="patroli" data-caption="4. Pengamanan Area Gerbang & Pengaturan Arus Lalu Lintas Kendaraan">
+            <div class="gallery-img-box">
+              <img src="gambar/kegiatan4.jpeg" alt="Pengamanan Area Gerbang dan Lalu Lintas" loading="lazy">
+              <span class="zoom-hint">&#128269; Perbesar</span>
+            </div>
             <figcaption>
               <strong>Pengamanan Akses &amp; Lalu Lintas</strong>
               <span>Pemantauan arus kendaraan keluar-masuk area guna menjaga ketertiban lingkungan.</span>
             </figcaption>
           </figure>
 
-          <figure class="gallery-card" data-category="pos" data-caption="5. Koordinasi Anggota Regu Jaga di Pos Pengamanan Lingkungan">
-            <img src="gambar/kegiatan5.jpeg" alt="Koordinasi Anggota Regu Jaga" loading="lazy">
+          <figure class="gallery-card reveal" data-category="pos" data-caption="5. Koordinasi Anggota Regu Jaga di Pos Pengamanan Lingkungan">
+            <div class="gallery-img-box">
+              <img src="gambar/kegiatan5.jpeg" alt="Koordinasi Anggota Regu Jaga" loading="lazy">
+              <span class="zoom-hint">&#128269; Perbesar</span>
+            </div>
             <figcaption>
               <strong>Koordinasi Regu Jaga Pos</strong>
               <span>Sinergi antaranggota shift dalam menjaga keamanan dan kenyamanan lingkungan.</span>
             </figcaption>
           </figure>
 
-          <figure class="gallery-card" data-category="pos" data-caption="6. Laporan Situasi & Kesiapan Personel di Pos Keamanan Lingkungan">
-            <img src="gambar/kegiatan6.jpeg" alt="Laporan Situasi Pos Keamanan" loading="lazy">
+          <figure class="gallery-card reveal" data-category="pos" data-caption="6. Laporan Situasi & Kesiapan Personel di Pos Keamanan Lingkungan">
+            <div class="gallery-img-box">
+              <img src="gambar/kegiatan6.jpeg" alt="Laporan Situasi Pos Keamanan" loading="lazy">
+              <span class="zoom-hint">&#128269; Perbesar</span>
+            </div>
             <figcaption>
               <strong>Siaga Pos Keamanan</strong>
               <span>Pengecekan buku mutasi dan kesiapan personel saat melaksanakan tugas penjagaan pos.</span>
             </figcaption>
           </figure>
 
-          <figure class="gallery-card" data-category="patroli" data-caption="7. Patroli Keamanan Malam Hari & Pemantauan Lingkungan Pemukiman Warga">
-            <img src="gambar/kegiatan7.jpeg" alt="Patroli Keamanan Malam Hari" loading="lazy">
+          <figure class="gallery-card reveal" data-category="patroli" data-caption="7. Patroli Keamanan Malam Hari & Pemantauan Lingkungan Pemukiman Warga">
+            <div class="gallery-img-box">
+              <img src="gambar/kegiatan7.jpeg" alt="Patroli Keamanan Malam Hari" loading="lazy">
+              <span class="zoom-hint">&#128269; Perbesar</span>
+            </div>
             <figcaption>
               <strong>Patroli Keamanan Malam Hari</strong>
               <span>Monitoring situasi kamtibmas malam hari bersama warga dan perangkat lingkungan setempat.</span>
             </figcaption>
           </figure>
 
-          <figure class="gallery-card" data-category="apel" data-caption="8. Apel Pengecekan Kelengkapan & Kerapian Seragam Regu Satpam PT. Asbhara Global Sakti">
-            <img src="gambar/kegiatan8.jpeg" alt="Apel Pengecekan Kelengkapan Regu" loading="lazy">
+          <figure class="gallery-card reveal" data-category="apel" data-caption="8. Apel Pengecekan Kelengkapan & Kerapian Seragam Regu Satpam PT. Asbhara Global Sakti">
+            <div class="gallery-img-box">
+              <img src="gambar/kegiatan8.jpeg" alt="Apel Pengecekan Kelengkapan Regu" loading="lazy">
+              <span class="zoom-hint">&#128269; Perbesar</span>
+            </div>
             <figcaption>
               <strong>Apel Kesiapan Regu Satpam</strong>
               <span>Pemeriksaan kerapian atribut, perlengkapan tugas, dan pengarahan SOP sebelum bertugas.</span>
             </figcaption>
           </figure>
 
-          <figure class="gallery-card" data-category="apel" data-caption="9. Apel Pergantian Shift Malam & Pengecekan Barisan Anggota Satpam di Lapangan">
-            <img src="gambar/kegiatan9.jpeg" alt="Apel Pergantian Shift Malam" loading="lazy">
+          <figure class="gallery-card reveal" data-category="apel" data-caption="9. Apel Pergantian Shift Malam & Pengecekan Barisan Anggota Satpam di Lapangan">
+            <div class="gallery-img-box">
+              <img src="gambar/kegiatan9.jpeg" alt="Apel Pergantian Shift Malam" loading="lazy">
+              <span class="zoom-hint">&#128269; Perbesar</span>
+            </div>
             <figcaption>
               <strong>Apel Shift Jaga Malam</strong>
               <span>Barisan personel shift malam siap menjalankan patroli dan pengawasan 24 jam penuh.</span>
             </figcaption>
           </figure>
 
-          <figure class="gallery-card" data-category="patroli" data-caption="10. Siaga Penjagaan Malam di Gerbang Utama dengan Rompi Reflektif">
-            <img src="gambar/kegiatan10.jpeg" alt="Siaga Penjagaan Malam Gerbang Utama" loading="lazy">
+          <figure class="gallery-card reveal" data-category="patroli" data-caption="10. Siaga Penjagaan Malam di Gerbang Utama dengan Rompi Reflektif">
+            <div class="gallery-img-box">
+              <img src="gambar/kegiatan10.jpeg" alt="Siaga Penjagaan Malam Gerbang Utama" loading="lazy">
+              <span class="zoom-hint">&#128269; Perbesar</span>
+            </div>
             <figcaption>
               <strong>Siaga Gerbang Utama Malam</strong>
               <span>Penjagaan ketat akses masuk pada jam rawan malam hari dilengkapi rompi reflektif.</span>
@@ -307,27 +419,41 @@
     <!-- KONTAK & FORMULIR PENAWARAN -->
     <section id="kontak" class="section">
       <div class="container contact-grid">
-        <div class="contact-left">
+        <div class="contact-left reveal">
           <span class="section-label">Hubungi Kami</span>
           <h2 class="section-title">Konsultasi &amp; Permintaan Penawaran</h2>
           <p>
-            Tim kami siap melakukan survei lokasi dan menyusun proposal penawaran pengadaan tenaga Satpam untuk <strong>Perumahan</strong> maupun <strong>Sekolah</strong> sesuai kebutuhan shift dan anggaran Anda.
+            Tim kami siap melakukan survei lokasi dan menyusun rincian penawaran pengadaan tenaga Satpam untuk <strong>Perumahan</strong> maupun <strong>Sekolah</strong> sesuai kebutuhan shift dan anggaran Anda.
           </p>
 
           <div class="contact-list">
             <div class="contact-box">
-              <strong>Kantor Pusat Batam</strong>
-              <span>Puri Pesona Batam Cluster I Blok E No. 9, Kel. Tg. Uncang, Kec. Batu Aji, Batam, Kepulauan Riau</span>
+              <div class="contact-icon">&#128205;</div>
+              <div>
+                <strong>Kantor Pusat Batam</strong>
+                <span>Kav Blok B no. 14, Patam Lestari, Sekupang, Batam City, Riau Islands</span>
+              </div>
             </div>
             <div class="contact-box">
-              <strong>Telepon &amp; WhatsApp</strong>
-              <span>+62 882-7177-2818</span>
+              <div class="contact-icon">&#128222;</div>
+              <div>
+                <strong>Telepon Kantor &amp; WhatsApp</strong>
+                <span>(0778)-8011-998 &bull; +62 882-7177-2818</span>
+              </div>
+            </div>
+            <div class="contact-box">
+              <div class="contact-icon">&#128338;</div>
+              <div>
+                <strong>Layanan Konsultasi &amp; Survei</strong>
+                <span>Senin – Sabtu (08.00 – 17.00 WIB) &bull; Siaga Operasional 24 Jam</span>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="form-wrapper">
+        <div class="form-wrapper reveal">
           <h3>Formulir Pengajuan Penawaran</h3>
+          <p class="form-sub">Data yang Anda isi akan langsung tersusun otomatis menjadi pesan WhatsApp ke admin kami.</p>
           <form id="quoteForm">
             <div class="form-group">
               <label for="nama">Nama Lengkap *</label>
@@ -336,7 +462,7 @@
 
             <div class="form-group">
               <label for="instansi">Nama Perumahan / Sekolah *</label>
-              <input type="text" id="instansi" required placeholder="Contoh: Perumahan Lotus Garden / SD-SMP Batam">
+              <input type="text" id="instansi" required placeholder="Contoh: Perumahan Patam Lestari / SD-SMP Batam">
             </div>
 
             <div class="form-row">
@@ -364,7 +490,10 @@
               <textarea id="catatan" rows="3" placeholder="Tuliskan alamat perumahan/sekolah dan sistem shift yang diinginkan..."></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-block">Kirim via WhatsApp Resmi</button>
+            <button type="submit" class="btn btn-primary btn-block">
+              <span>Kirim Permintaan via WhatsApp</span>
+              <span class="btn-arrow">&rarr;</span>
+            </button>
             <p class="form-message" id="formMessage"></p>
           </form>
         </div>
@@ -377,20 +506,29 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <strong>PT. ASBHARA GLOBAL SAKTI (GLOBAL SECURITY)</strong>
-        <p>Jasa Satpam Perumahan &amp; Sekolah &bull; Puri Pesona Batam Cluster I Blok E No. 9, Kel. Tg. Uncang, Kec. Batu Aji, Batam.</p>
+        <p>Jasa Satpam Perumahan &amp; Sekolah &bull; Kav Blok B no. 14, Patam Lestari, Sekupang, Batam City, Riau Islands.</p>
       </div>
       <div class="footer-meta">
-        <p>WA: +62 882-7177-2818 | Email: asbharaglobalpt@gmail.com</p>
+        <p>Telp: (0778)-8011-998 | HP / WA: +62 882-7177-2818</p>
         <p>&copy; <span id="tahunSekarang"></span> PT. Asbhara Global Sakti. Hak Cipta Dilindungi.</p>
       </div>
     </div>
   </footer>
 
-  <!-- MODAL PERBESAR FOTO (LIGHTBOX DENGAN NAVIGASI) -->
+  <!-- TOMBOL WHATSAPP MELAYANG (FLOATING BUTTON) -->
+  <a href="https://wa.me/6288271772818?text=Halo%20PT.%20Asbhara%20Global%20Sakti,%20saya%20ingin%20konsultasi%20jasa%20Satpam%20Perumahan%20/%20Sekolah." target="_blank" rel="noopener" class="floating-wa" aria-label="Chat WhatsApp PT. Asbhara Global Sakti">
+    <span class="wa-icon">&#128172;</span>
+    <span class="wa-label">Hubungi WA</span>
+  </a>
+
+  <!-- MODAL PERBESAR FOTO (LIGHTBOX DENGAN NAVIGASI & SWIPE) -->
   <div id="photoModal" class="photo-modal" aria-hidden="true">
     <div class="photo-modal-content">
-      <button type="button" id="closeModalBtn" class="modal-close" aria-label="Tutup">&times; Tutup</button>
-      <div class="modal-img-wrap">
+      <div class="modal-top-bar">
+        <span id="modalCounter" class="modal-counter">1 / 10</span>
+        <button type="button" id="closeModalBtn" class="modal-close" aria-label="Tutup">&times; Tutup</button>
+      </div>
+      <div class="modal-img-wrap" id="modalSwipeArea">
         <button type="button" id="prevPhotoBtn" class="modal-nav modal-prev" aria-label="Foto Sebelumnya">&#10094;</button>
         <img id="modalImage" src="" alt="Pratinjau Foto Kegiatan">
         <button type="button" id="nextPhotoBtn" class="modal-nav modal-next" aria-label="Foto Berikutnya">&#10095;</button>

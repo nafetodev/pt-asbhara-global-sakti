@@ -5,24 +5,63 @@ document.addEventListener("DOMContentLoaded", function () {
     tahunSpan.textContent = new Date().getFullYear();
   }
 
-  // 2. Toggle Menu Navigasi Mobile
+  // 2. Efek Bayangan Navbar saat Halaman Di-scroll
+  const navbar = document.getElementById("navbar");
+  window.addEventListener("scroll", function () {
+    if (navbar) {
+      if (window.scrollY > 20) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    }
+  });
+
+  // 3. Toggle Menu Navigasi Mobile (Hamburger)
   const menuToggle = document.getElementById("menuToggle");
   const navMenu = document.getElementById("navMenu");
 
   if (menuToggle && navMenu) {
     menuToggle.addEventListener("click", function () {
-      navMenu.classList.toggle("active");
+      const isOpen = navMenu.classList.toggle("active");
+      menuToggle.classList.toggle("open", isOpen);
+      menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
 
     const navLinks = navMenu.querySelectorAll("a");
     navLinks.forEach(function (link) {
       link.addEventListener("click", function () {
         navMenu.classList.remove("active");
+        menuToggle.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
       });
     });
   }
 
-  // 3. Tombol Layanan Otomatis Memilih Dropdown Form (Perumahan / Sekolah)
+  // 4. Animasi Muncul Bertahap (Scroll Reveal)
+  const revealElements = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      function (entries, obs) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    revealElements.forEach(function (el) {
+      observer.observe(el);
+    });
+  } else {
+    revealElements.forEach(function (el) {
+      el.classList.add("visible");
+    });
+  }
+
+  // 5. Tombol Layanan Otomatis Memilih Dropdown Form (Perumahan / Sekolah)
   const serviceButtons = document.querySelectorAll(".btn-service");
   const layananSelect = document.getElementById("layananSelect");
   const kontakSection = document.getElementById("kontak");
@@ -39,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // 4. Kirim Formulir Penawaran ke WhatsApp Perusahaan (+62 882-7177-2818)
+  // 6. Kirim Formulir Penawaran ke WhatsApp Perusahaan (+62 882-7177-2818)
   const quoteForm = document.getElementById("quoteForm");
   const formMessage = document.getElementById("formMessage");
 
@@ -76,15 +115,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // 5. Filter Kategori & Lightbox 10 Foto Kegiatan
+  // 7. Filter Kategori & Lightbox 10 Foto Kegiatan (Dukung Klik, Keyboard & Swipe HP)
   const filterButtons = document.querySelectorAll(".filter-btn");
   const galleryCards = Array.from(document.querySelectorAll(".gallery-card"));
   const photoModal = document.getElementById("photoModal");
   const modalImage = document.getElementById("modalImage");
   const modalCaption = document.getElementById("modalCaption");
+  const modalCounter = document.getElementById("modalCounter");
   const closeModalBtn = document.getElementById("closeModalBtn");
   const prevPhotoBtn = document.getElementById("prevPhotoBtn");
   const nextPhotoBtn = document.getElementById("nextPhotoBtn");
+  const modalSwipeArea = document.getElementById("modalSwipeArea");
 
   let activeIndex = 0;
 
@@ -122,6 +163,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (img && modalImage && modalCaption) {
       modalImage.src = img.src;
       modalCaption.textContent = caption || img.alt;
+      if (modalCounter) {
+        modalCounter.textContent = (activeIndex + 1) + " / " + visibleCards.length;
+      }
     }
   }
 
@@ -135,6 +179,7 @@ document.addEventListener("DOMContentLoaded", function () {
         tampilkanFotoModal(idx >= 0 ? idx : 0);
         photoModal.classList.add("open");
         photoModal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
       });
     });
 
@@ -155,6 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function tutupModal() {
       photoModal.classList.remove("open");
       photoModal.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
     }
 
     if (closeModalBtn) {
@@ -173,5 +219,25 @@ document.addEventListener("DOMContentLoaded", function () {
       if (e.key === "ArrowLeft") tampilkanFotoModal(activeIndex - 1);
       if (e.key === "ArrowRight") tampilkanFotoModal(activeIndex + 1);
     });
+
+    // Dukungan geser jari (Swipe) di layar HP
+    let touchStartX = 0;
+    if (modalSwipeArea) {
+      modalSwipeArea.addEventListener("touchstart", function (e) {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+
+      modalSwipeArea.addEventListener("touchend", function (e) {
+        const touchEndX = e.changedTouches[0].screenX;
+        const diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > 40) {
+          if (diff > 0) {
+            tampilkanFotoModal(activeIndex + 1);
+          } else {
+            tampilkanFotoModal(activeIndex - 1);
+          }
+        }
+      }, { passive: true });
+    }
   }
 });
