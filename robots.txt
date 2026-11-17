@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nafetodev.github.io/pt-asbhara-global-sakti/sitemap.xml
